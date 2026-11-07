@@ -1,0 +1,67 @@
+site_name: Automatisiertes Hugo Portfolio
+site_description: "Hugo-Portfolio auf AWS mit Ansible und GitHub Actions. Semesterarbeit 2, ITCNE25, TBZ HF"
+site_author: Dodoe Rumiñahui Mannale
+site_url: https://ruminahuim.github.io/hugo-portfolio-semesterarbeit/
+repo_url: https://github.com/RuminahuiM/hugo-portfolio-semesterarbeit
+repo_name: RuminahuiM/hugo-portfolio-semesterarbeit
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Dunkles Design
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Helles Design
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search:
+      lang: de
+
+validation:
+  links:
+    anchors: warn
+
+nav:
+  - Start: index.md
+  - Projektmanagement: documents/01_Projektmanagement/index.md
+  - Technische Umsetzung: documents/02_TeschnischeUmsetzung/index.md
+  - Fazit und Ausblick: documents/03_Fazit/index.md
+  - Anhänge:
+      - documents/04_Anhaenge/index.md
+      - Glossar: documents/04_Anhaenge/glossar.md
+      - Quellen: documents/04_Anhaenge/quellen.md
