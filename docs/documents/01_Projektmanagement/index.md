@@ -87,10 +87,13 @@ Github Actions ist genau für solche Automatisierungen gebaut. Die CI Scripts ü
 
 - Ich habe ein klar abgegrenztes technisches Ziel:  
   Hugo-Portfolio + AWS (S3, CloudFront, ACM, DNS) + Ansible + GitHub Actions. Das ist modern, praxisnah und gut vorzeigbar.
+
 - Das Projekt zeigt genau die Themen, die für spätere Arbeitgeber spannend sind:  
   Infrastructure as Code, Cloud-Grundlagen, CI/CD, Security (S3 privat, HTTPS, OIDC statt Keys).
+
 - Reproduzierbarkeit ist bewusst als Ziel eingeplant:  
   Andere sollen mit wenigen Schritten ihr eigenes Portfolio damit aufbauen können.
+
 - Der Scope ist technisch fokussiert:  
   Eine statische Seite, ein Repo, eine Pipeline. Keine unnötigen Backend- oder Datenbank-Baustellen.
 
@@ -98,10 +101,13 @@ Github Actions ist genau für solche Automatisierungen gebaut. Die CI Scripts ü
 
 - Es sind viele Technologien gleichzeitig im Spiel (Hugo, Ansible, AWS, IAM/OIDC, DNS, GitHub Actions).  
   Das erhöht Komplexität und Fehlerrisiko.
+
 - IAM, Zertifikate und DNS sind fehleranfällig, vor allem ohne viel Routine.  
   Kleinste Konfigurationsfehler können viel Zeit kosten.
+
 - Reproduzierbarkeit ist ein Zusatz-Ziel, das zusätzlichen Aufwand erzeugt  
   (Playbooks aufräumen, Variablen zentralisieren, Getting-Started-Doku).
+
 - Gefahr, sich in Details zu verlieren  
   (Theme-Tuning, Performance-Feinschliff, „nice to have“ Features).
 
@@ -109,10 +115,13 @@ Github Actions ist genau für solche Automatisierungen gebaut. Die CI Scripts ü
 
 - Das Projekt eignet sich sehr gut als späteres Portfolio-Beispiel:  
   „Ich habe eine komplette Cloud-/DevOps-Lösung selbst aufgebaut.“
+
 - Ich kann mich gezielt mit DevOps-/Cloud-Themen positionieren:  
   Security, Automatisierung, Deployment-Pipelines, reproducible Setup.
+
 - Das Setup ist wiederverwendbar:  
   für mein eigenes Portfolio, andere Hugo-Seiten oder zukünftige Projekte.
+
 - Es gibt reichlich Stoff für eine gute Dokumentation und Präsentation:  
   Architekturdiagramme, Abläufe, Screenshots, Erläuterungen zu IAM/OIDC/DNS.
 
@@ -120,10 +129,13 @@ Github Actions ist genau für solche Automatisierungen gebaut. Die CI Scripts ü
 
 - Zeitdruck und Scope Creep:  
   Wenn ich immer neue Ideen einbaue (WAF, Multi-Stage, komplexe Rollbacks, fancy Themes), kann das MVP zu spät oder nur halb fertig werden.
+
 - Abhängigkeit von AWS, DNS und Zertifikaten:  
   Probleme mit Validation, Propagation oder Limits können den Fortschritt ausbremsen.
+
 - Kosten und Limits:  
   Falsche Konfiguration (z. B. viele CloudFront-Invalidations, unnötige Logs) kann unerwartete Kosten verursachen.
+
 - Bewertungssicht der Schule:  
   Wenn ich zu stark ins Technische abdrifte und Projektmanagement/Dokumentation vernachlässige, wirkt das in der Bewertung negativ.
 
@@ -132,15 +144,20 @@ Github Actions ist genau für solche Automatisierungen gebaut. Die CI Scripts ü
 - **Klares MVP definieren und zuerst umsetzen**  
   Hugo lokal → AWS-Infrastruktur → Domain/HTTPS → CI/CD → „Push → Live“.  
   Reproduzierbarkeit und Feinschliff kommen erst danach.
+
 - **Scope bewusst begrenzen**  
   Keine zusätzlichen Features, solange das MVP nicht stabil läuft. Neue Ideen nur aufnehmen, wenn Zeit und Nutzen es rechtfertigen.
+
 - **Zeitpuffer für AWS/IAM/DNS einplanen**  
   Kritische Themen (ACM, OIDC-Rolle, DNS) bewusst früh einplanen und mit Reservezeit versehen.
+
 - **Kosten im Blick behalten**  
   Budget-Alarm in AWS einrichten und das im Bericht erwähnen, um Kostenrisiko und Verantwortungsbewusstsein zu zeigen.
+
 - **Dokumentation laufend mitführen**  
   Wichtige Entscheidungen und Stolpersteine zeitnah festhalten, statt alles am Ende zu rekonstruieren.  
   So stützt die Doku die Bewertung und gleichzeitig mein eigenes Portfolio.
+
 ---
 
 # Projekmanagement Methodik
@@ -152,6 +169,7 @@ Github Actions ist genau für solche Automatisierungen gebaut. Die CI Scripts ü
 **Sprint‑Länge:** 2 Wochen.
 
 **Zeremonien (pro Sprint):**
+
 - Planung (45 min)
 - Daily (kurzer Check und nur an Tagen, an denen am Projekt weitergearbeitet wird)
 - Review & Retro (30 min)
@@ -168,6 +186,7 @@ Ziel klar, Akzeptanzkriterien notiert, nötige Zugangsdaten vorhanden.
 Umgesetzt, gebaut/getestet, live geprüft, kurze Doku/Notiz aktualisiert.
 
 **Struktur Sprint Review:**
+
 - Begrüssung & Regeln erklären
 - Was wird gezeigt, was nicht?
 - Alle Sprint‑Items listen: Demo ja/nein, Status
@@ -178,6 +197,7 @@ Umgesetzt, gebaut/getestet, live geprüft, kurze Doku/Notiz aktualisiert.
 - Abschluss: Danke und Anerkennung
 
 **Struktur Retrospective:**
+
 - Was lief gut?
 - Was lief schlecht?
 - Wie kann ich das verbessern?
@@ -249,6 +269,7 @@ Jedenfalls keine mit Videoaufnahme und auch grundsätzlich eine gekürztere Vers
 Am Anfang dieses Sprints, gab es noch kein Product Backlog, weshalb ich Theoretisch innerhalb des Sprints die entsprechenden Backlog Items in den Sprint eingefügt habe.
 
 Folgende Backlog items habe ich für den Sprint 0 eingeplant:
+
 - Initialen Projektplan in JIRA erstellen [SCRUM-119](https://rumidesigns.atlassian.net/browse/SCRUM-119)
 - PRJ Doku erstellen (github pages initial) [SCRUM-120](https://rumidesigns.atlassian.net/browse/SCRUM-120)
 - Als Projektleiter möchte ich ein zentrales GitHub‑Repo mit Branchenschutz, damit ich sauber arbeiten kann [SCRUM-12](https://rumidesigns.atlassian.net/browse/SCRUM-12)
@@ -286,10 +307,12 @@ Ziel für den nächsten Sprint, ist es ein MVP zu erstellen. Dabei werde ich mic
 Für dieses Projekt ist das Wichtigste nämlich, am Schluss ein öffentliches Portfolio zu haben, welches sich nach jedem Commit aktualisiert. Die zusätzlichen Features sind weniger Relevant.
 
 **Tasks die übernommen werden:**
+
 - [SCRUM-15](https://rumidesigns.atlassian.net/browse/SCRUM-15) wird erstmal übernommen. Ich kläre noch ob es nötig ist, das in jeden Sprint mitzunehmen, oder ob es mehr Sinn macht, dies ander hanzuhaben.
 - [SCRUM-17](https://rumidesigns.atlassian.net/browse/SCRUM-17) wird übernommen und hat nun die höchste Priorität.
 
 **Neue Inputs:**
+
 - Was auch wichtig sein wird, ist im nächsten Sprint die Architektur des Pordukts zu skizzieren und die Skizze in der Dokumentation nachzutragen. Das ist bereits ein SubTask von [SCRUM-15](https://rumidesigns.atlassian.net/browse/SCRUM-15), aber ich möchte einfach nochmals besonderen Fokus darauf setzen. Ich habe die Priorisierung des Tasks entsprechend erhöht.
 
 ### Sprint Retrospective
@@ -372,6 +395,7 @@ Ich werde in den nächsten Sprints darauf achten, nach jeder Session, ein Update
 Im nächsten Sprint, geht es darum, via Ansible die Hosting Struktur aufzubauen. Ich muss also über Ansible auf AWS zugreifen und dort entsprechend ein S3 Bucket (Oder evtl eine EC2 Instanz) einrichten. Auch soll entsprechend CloudFront konfiguriert werden, um die Seite zu publizieren.
 
 **Tasks die übernommen werden:**
+
 - [SCRUM-15](https://rumidesigns.atlassian.net/browse/SCRUM-15) wird erstmal übernommen. Ich kläre noch ob es nötig ist, das in jeden Sprint mitzunehmen, oder ob es mehr Sinn macht, dies anders handzuhaben.
 - [SCRUM-18](https://rumidesigns.atlassian.net/browse/SCRUM-18) wird übernommen und hat nun die höchste Priorität.
 
@@ -401,6 +425,7 @@ In diesem Sprint sollte, das eigentliche Produkt zu erstellt werden. Das Ziel de
 
 ### Sprint Planing
 Folgende Backlog items habe ich für den Sprint 2 eingeplant:
+
 - Projektdokumentation für TBZ [SCRUM-15](https://rumidesigns.atlassian.net/browse/SCRUM-15) wurde wieder übernommen, da erst am Schluss des Projekts abgeschlossen werden kann.
 - Hugo Portfolio einrichten [SCRUM-18](https://rumidesigns.atlassian.net/browse/SCRUM-18) wurde aus letztem Sprint übernommen, da noch ein subtask nicht als erledigt markiert war.
 - Beispiele für Projekt posts erstellen [SCRUM-19](https://rumidesigns.atlassian.net/browse/SCRUM-19)
@@ -543,6 +568,7 @@ Nun habe ich ein besseres verständnis von Stories und wie man ein Scrum Projekt
 Der nächste Sprint ist gleichzeitig der letzte. Dannach steht bereits die Abgabe des Projekts an. In diesem Sprint geht es also darum, dass Projekt vollständig abzuschliessen. Das heisst, finaler Test und feinschliff des Produkts, Projektdokumentation abschliessen und Präsentation/Demo vorbereiten.
 
 **Tasks die übernommen werden:**
+
 - [SCRUM-15](https://rumidesigns.atlassian.net/browse/SCRUM-15) Ongoing Task. Muss im folgenden Sprint abgeschlossen werden.
 - [SCRUM-133](https://rumidesigns.atlassian.net/browse/SCRUM-133) Dokumentation grösstenteils abgeschlossen, allerdings kann es noch für den User vereinfacht werden.
 
@@ -571,6 +597,7 @@ In diesem Spürint schliessem wir das Projekt ab. Es gibt einige Tasks die das P
 
 ### Sprint Planing
 Folgende Backlog items habe ich für den Sprint 3 eingeplant:
+
 - Reproduzierbares Setup mit wenigen Befehlen [SCRUM-133](https://rumidesigns.atlassian.net/browse/SCRUM-133)
 - 404 Error Seite [SCRUM-31](https://rumidesigns.atlassian.net/browse/SCRUM-31)
 - Template generalisieren [SCRUM-148](https://rumidesigns.atlassian.net/browse/SCRUM-148)

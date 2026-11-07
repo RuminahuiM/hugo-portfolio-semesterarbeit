@@ -14,6 +14,7 @@ Die entsprechenden Github Workflows, führen den Build command mit der neusten H
 Allerdings wollte ich sicherstellen, dass mein bearbeitetes template richtig 'builded' und dass ich die Error Meldungen direkt einsehen kann, um allfällige Probleme einfacher debuggen zu können.
 
 Hier eine kurze Anleitung um dieses Setup einzurichten:
+
 1. Hugo auf windows installieren. Wichtig ist hierbei die 'extended' Version zu installieren, da diese für das Stack Theme benötigt wird
 ```cmd
 winget install Hugo.Hugo.Extended
@@ -45,6 +46,7 @@ Wie ihr seht, hatte ich es zum Testen bereits mit etwas persönlichem Inhalt bes
 
 **Wichtige Erkentnisse**
 Ich habe in diesem Schritt einiges ausprobiert, um zu verstehen wie Hugo funktioniert. Folgende Erkentnisse habe ich daraus entnommen:
+
 - Hugo muss nicht lokal installiert/'builded' werden, wenn es über Github pages veröffentlicht wird. Das Template bietet bereits ein Github Workflow für den build und deployment Prozess.
 - Um neue Posts zu erstellen muss nicht unbedingt der entsprechende Hugo Befehl verwendet werden und es ist praktischer ein vorherigen Post-Odner einfach zu kopieren.
 - In der Metadata der Posts, können Posts als Draft markiert werden, wodurch diese nicht veröffentlicht werden. 
