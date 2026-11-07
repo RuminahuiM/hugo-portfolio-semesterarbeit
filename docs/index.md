@@ -10,6 +10,8 @@
 
 Diese Seite ist die Dokumentation meiner 2. Semesterarbeit. Der Inhalt dieser Startseite entspricht der Projektdefinition gemäss Einreichungsformular.
 
+> **Hinweis zu den Jira-Links:** Die Links auf Jira-Tickets (rumidesigns.atlassian.net) waren für die betreuenden Lehrpersonen gedacht und sind öffentlich nicht zugänglich.
+
 ## Links
 
 | Was | Wo |

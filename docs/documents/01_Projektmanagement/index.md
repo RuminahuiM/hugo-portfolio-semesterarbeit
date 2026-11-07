@@ -360,7 +360,7 @@ In diesem Sprint ging es darum ein MVP zu erstellen. Dafür hatte ich geplant ei
 
 #### DEMO - SCRUM-18 & SCRUM-19
 
-In dieser kurzen Demo zeige ich die Live-Seite die aus dem bearbeitetem Template erstellt wird. Dies stellt den MVP dar. Das Endprodukt wird ähnlich aussehen, nur anders gehostet werden. Ihr könnt auch die Live-Seite selbst auschecken unter [https://ruminahuim.github.io/portfolio/](https://ruminahuim.github.io/portfolio/).
+In dieser kurzen Demo zeige ich die Live-Seite die aus dem bearbeitetem Template erstellt wird. Dies stellt den MVP dar. Das Endprodukt wird ähnlich aussehen, nur anders gehostet werden. Ihr könnt auch die Live-Seite selbst auschecken unter `ruminahuim.github.io/portfolio/` (Hinweis November 2026: diese MVP-Seite ist nicht mehr online).
 
 <video controls playsinline preload="metadata" width="100%">
   <source src="../../resources/videos/SCRUM-59_lokaleVorschauTest.mp4" type="video/mp4">
